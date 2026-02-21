@@ -363,6 +363,11 @@ function showQuestion(){
     answersDiv.innerHTML = "";
 
     q.a.forEach(ans=>{
+        const neutralBtn document.createElement("button");
+        neutralBtn.className="answer";
+        neutralBtn.innerText = "Je ne sais pas";
+        neutralBtn.onclick=(audio.play());
+    
         const btn = document.createElement("button");
         btn.className="answer";
         btn.innerText = ans.text;
