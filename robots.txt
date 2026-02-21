@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kashair.github.io/trouve-ta-branche-du-communisme/sitemap.xml

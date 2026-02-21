@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #8b0000, #1a1a1a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+h1 {
+    color: #ff4d4d;
+}
+
+button {
+    background: #cc0000;
+    border: none;
+    padding: 12px 18px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+}
+
+.answer {
+    display: block;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#progress {
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+/* Style de base du résultat */
+#resultScreen {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#resultTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#resultDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Liste du classement */
+#resultList {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Chaque ligne du classement */
+#resultList li {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    color: #000000;
+    transition: transform 0.2s;
+}
+
+/* Effet hover */
+#resultList li:hover {
+    transform: scale(1.03);
+    background-color: #dfe6e9;
+}
+
+/* Barre de pourcentage derrière le texte */
+#resultList li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 8px;
+    z-index: -1;
+    background-color: #ff3333;
+    opacity: 0.3;
+    width: 0%; /* sera ajusté via JS */
+}
+
+/* Gagnant principal mis en valeur */
+#resultList li:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    #resultList li {
+        font-size: 0.9rem;
+    }
+}
+
+

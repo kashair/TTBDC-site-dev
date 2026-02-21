@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="index, follow">
+<title>Test des branches du communisme | Quiz politique</title>
+<meta name="description"
+content="Test politique interactif permettant de découvrir quelle branche du communisme correspond le mieux à vos idées : marxisme, trotskisme, maoïsme, anarcho-communisme et plus.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="1xS3ZYiXaHTBtUUuEVQq6uU5RbPjMm8XGq1HQYWdMkw" />
+<link rel="icon" href="siteicon.png" sizes="32x32" type="image/png">
+<link rel="icon" href="siteicon.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="siteicon.png">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Trouve ta branche du communisme! </h1>
+
+<div id="startScreen">
+<p>
+Ce test idéologique analyse tes positions politiques afin d’estimer
+le courant communiste dont tu es le plus proche.
+</p>
+<button onclick="startTest()">Commencer le test</button>
+</div>
+
+<div id="quizScreen" class="hidden">
+<h2 id="question"></h2>
+<div id="answers"></div>
+<p id="progress"></p>
+</div>
+
+<div id="resultScreen" class="hidden">
+<h2 id="resultTitle">Résultat</h2>
+<p id="resultDescription">Voici le classement des idéologies selon vos réponses :</p>
+<ul id="resultList"></ul>
+<button onclick="restart()">Recommencer</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
